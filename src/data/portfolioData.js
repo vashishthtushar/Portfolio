@@ -138,6 +138,8 @@ export const projects = [
       demo: null,
     },
     isFlagship: true,
+    confidential: true,
+    confidentialNote: "Built at AiDOOS — proprietary; code and live demo are confidential.",
   },
   {
     id: "lithosense",
@@ -148,8 +150,78 @@ export const projects = [
       "An end-to-end XGBoost ML pipeline for gallstone risk prediction, covering preprocessing, feature engineering, training, and evaluation. Implements SHAP-based explainability for global and patient-level insights into model predictions, wraps the prediction model with FastAPI, and deploys the application through Streamlit with a Hugging Face LLM API integration for automated clinical insights.",
     techTags: ["Python", "XGBoost", "Scikit-learn", "SHAP", "FastAPI", "Streamlit", "Hugging Face"],
     links: {
-      github: null,
+      github: "https://github.com/vashishthtushar/LithoSense",
+      demo: "https://lithosense-8heftpobxfzrovbte2nf5u.streamlit.app/",
+    },
+    isFlagship: false,
+  },
+  {
+    id: "careguard",
+    number: "03",
+    badge: null,
+    title: "CareGuard — Agentic Clinical Risk Co-Pilot",
+    description:
+      "An agentic clinical risk co-pilot that grounds every assessment in both a trained XGBoost + SHAP model and a curated clinical guideline corpus via hybrid retrieval, orchestrated by a 3-role LangGraph agent pipeline with human-approval gating before anything is released. Built end-to-end — containerized, observable, and tested — around a Retrieval, Agents, Models, Proof (R.A.M.P.) framework.",
+    techTags: ["Python", "LangGraph", "FastAPI", "XGBoost", "SHAP", "Qdrant", "Docker"],
+    links: {
+      github: "https://github.com/vashishthtushar/careguard",
       demo: null,
+    },
+    isFlagship: false,
+  },
+  {
+    id: "audit-grade-rag",
+    number: "04",
+    badge: null,
+    title: "Audit-Grade RAG — Traceable Credit Decision Support",
+    description:
+      "A credit-decision support system where every claim is traceable and every decision reconstructable: hybrid RAG with cross-encoder reranking, a calibrated risk model that explains its score as adverse-action reason codes, an independent verifier that strips uncited claims before release, and a hash-chained, tamper-evident audit ledger. Blocks 34/34 adversarial prompt-injection attempts in evaluation.",
+    techTags: ["Python", "RAG", "Cross-Encoder Reranking", "SHAP", "Docker"],
+    links: {
+      github: "https://github.com/vashishthtushar/audit-grade-rag",
+      demo: null,
+    },
+    isFlagship: false,
+  },
+  {
+    id: "telecom-troubleshooting-rag",
+    number: "05",
+    badge: null,
+    title: "Telecom Troubleshooting RAG Pipeline",
+    description:
+      "A production-shaped RAG pipeline over telecom network troubleshooting documentation — structured ingestion with metadata enrichment, three chunking strategies, instruction-aware BGE embeddings, hybrid dense + BM25 retrieval with cross-encoder re-ranking, and a 30-query evaluation set backed by 116 passing tests.",
+    techTags: ["Python", "RAG", "ChromaDB", "BM25", "BGE Embeddings", "Docker"],
+    links: {
+      github: "https://github.com/vashishthtushar/Telecom-Troubleshooting-RAG",
+      demo: null,
+    },
+    isFlagship: false,
+  },
+  {
+    id: "churn-app",
+    number: "06",
+    badge: null,
+    title: "Churn App — Prediction Dashboard, Agent & RAG Assistant",
+    description:
+      "Three systems built on one telecom churn dataset: an interactive Streamlit dashboard that scores and visualizes churn probability, an autonomous LangGraph ML-analyst agent that plans, models, and reports on its own, and a RAG \"proof envelope\" support assistant that never answers without grounded citations.",
+    techTags: ["Python", "Streamlit", "LangGraph", "RAG", "Scikit-learn"],
+    links: {
+      github: "https://github.com/vashishthtushar/Churn_app",
+      demo: "https://churnapp-kdqdhkxsgsnksuedzyehcv.streamlit.app/",
+    },
+    isFlagship: false,
+  },
+  {
+    id: "hotel-booking-cms",
+    number: "07",
+    badge: null,
+    title: "Hotel Booking CMS — Booking Site with a Live-Editable Admin Dashboard",
+    description:
+      "A full-stack booking site and content-managed platform for small hotels and guest houses, built for Hotel Bhavana Bhawan in Mathura-Vrindavan. Pairs a public marketing and booking-inquiry site with an admin CMS dashboard that lets the owner update room types, pricing, amenities, nearby attractions, and guest reviews — changes go live instantly, with no code changes or redeploys required.",
+    techTags: ["React", "Admin CMS", "REST API", "AWS S3", "CloudFront"],
+    links: {
+      github: null,
+      demo: "https://d31axs1ulsuhdh.cloudfront.net/",
     },
     isFlagship: false,
   },

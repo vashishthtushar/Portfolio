@@ -12,6 +12,12 @@ const ExternalLinkIcon = () => (
   </svg>
 );
 
+const LockIcon = () => (
+  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+  </svg>
+);
+
 const ProjectCard = ({ project, aosDelay }) => (
   <div 
     data-aos="fade-up"
@@ -58,63 +64,40 @@ const ProjectCard = ({ project, aosDelay }) => (
       </div>
 
       {/* Action Buttons */}
-      <div className="flex flex-wrap gap-3">
-        {/* GitHub */}
-        {project.links.github && (
-          <a 
-            href={project.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black transition-all duration-300 group/btn"
-          >
-            <GitHubIcon />
-            GitHub
-          </a>
-        )}
+      {project.confidential ? (
+        <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/50 text-xs md:text-sm font-semibold w-fit">
+          <LockIcon />
+          {project.confidentialNote}
+        </div>
+      ) : (
+        <div className="flex flex-wrap gap-3">
+          {/* GitHub */}
+          {project.links.github && (
+            <a
+              href={project.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black transition-all duration-300 group/btn"
+            >
+              <GitHubIcon />
+              GitHub
+            </a>
+          )}
 
-        {/* Live Demo (single) */}
-        {project.links.demo !== undefined && (
-          <a 
-            href={project.links.demo || '#'}
-            target={project.links.demo ? "_blank" : undefined}
-            rel={project.links.demo ? "noopener noreferrer" : undefined}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
-              project.links.demo 
-                ? 'bg-[#ff2a2a] text-white hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)]' 
-                : 'bg-white/5 text-white/40 border border-white/10 cursor-not-allowed'
-            }`}
-          >
-            <ExternalLinkIcon />
-            {project.links.demo ? 'Live Demo' : 'Demo Coming Soon'}
-          </a>
-        )}
-
-        {/* Frontend Demo (Karigar) */}
-        {project.links.frontendDemo && (
-          <a 
-            href={project.links.frontendDemo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#ff2a2a] text-white text-sm font-semibold hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)] transition-all duration-300"
-          >
-            <ExternalLinkIcon />
-            Frontend Demo
-          </a>
-        )}
-
-        {/* Backend API (Karigar) */}
-        {project.links.backendApi && (
-          <a 
-            href={project.links.backendApi}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white/20 transition-all duration-300"
-          >
-            <ExternalLinkIcon />
-            Backend API
-          </a>
-        )}
-      </div>
+          {/* Live Demo */}
+          {project.links.demo && (
+            <a
+              href={project.links.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#ff2a2a] text-white text-sm font-semibold hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)] transition-all duration-300"
+            >
+              <ExternalLinkIcon />
+              Live Demo
+            </a>
+          )}
+        </div>
+      )}
     </div>
   </div>
 );
