@@ -142,8 +142,24 @@ export const projects = [
     confidentialNote: "Built at AiDOOS — proprietary; code and live demo are confidential.",
   },
   {
-    id: "lithosense",
+    id: "story-point-prediction",
     number: "02",
+    badge: null,
+    title: "Story Point Prediction — ML-Based Task Effort Estimator",
+    description:
+      "A machine learning pipeline that predicts story-point effort for engineering tasks from historical project data, built to help teams estimate task effort before work begins. Covers the full lifecycle in-house — data collection and scraping, cleaning and preprocessing, feature engineering, and model training and evaluation with XGBoost.",
+    techTags: ["Python", "XGBoost", "Feature Engineering", "Web Scraping", "Pandas"],
+    links: {
+      github: null,
+      demo: null,
+    },
+    isFlagship: false,
+    confidential: true,
+    confidentialNote: "Built at AiDOOS — proprietary; code and live demo are confidential.",
+  },
+  {
+    id: "lithosense",
+    number: "03",
     badge: null,
     title: "LithoSense — Explainable AI Tool for Gallstone Risk Prediction",
     description:
@@ -157,7 +173,7 @@ export const projects = [
   },
   {
     id: "careguard",
-    number: "03",
+    number: "04",
     badge: null,
     title: "CareGuard — Agentic Clinical Risk Co-Pilot",
     description:
@@ -171,7 +187,7 @@ export const projects = [
   },
   {
     id: "audit-grade-rag",
-    number: "04",
+    number: "05",
     badge: null,
     title: "Audit-Grade RAG — Traceable Credit Decision Support",
     description:
@@ -185,7 +201,7 @@ export const projects = [
   },
   {
     id: "telecom-troubleshooting-rag",
-    number: "05",
+    number: "06",
     badge: null,
     title: "Telecom Troubleshooting RAG Pipeline",
     description:
@@ -199,7 +215,7 @@ export const projects = [
   },
   {
     id: "churn-app",
-    number: "06",
+    number: "07",
     badge: null,
     title: "Churn App — Prediction Dashboard, Agent & RAG Assistant",
     description:
@@ -213,7 +229,7 @@ export const projects = [
   },
   {
     id: "hotel-booking-cms",
-    number: "07",
+    number: "08",
     badge: null,
     title: "Hotel Booking CMS — Booking Site with a Live-Editable Admin Dashboard",
     description:
