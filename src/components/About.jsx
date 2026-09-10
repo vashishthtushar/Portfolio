@@ -38,6 +38,51 @@ const FastApiIcon = () => (
   </div>
 );
 
+const PyTorchIcon = () => (
+  <div className="flex flex-col items-center gap-2">
+    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="12" fill="#0a0a0a" />
+      <path
+        fill="#EE4C2C"
+        d="M12.963 5.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.176 7.547 7.547 0 01-1.705-1.715.75.75 0 00-1.152-.082A9 9 0 1015.68 7.534a7.46 7.46 0 01-2.717-2.248zM15.75 17.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+      />
+    </svg>
+    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">PyTorch</span>
+  </div>
+);
+
+const LangChainIcon = () => (
+  <div className="flex flex-col items-center gap-2">
+    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="12" fill="#1C3830" />
+      <path
+        fill="#4ADE80"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M16.902 6.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+      />
+    </svg>
+    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">LangChain</span>
+  </div>
+);
+
+const DockerIcon = () => (
+  <div className="flex flex-col items-center gap-2">
+    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="12" fill="#2496ED" />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M17 8.75l-5-2.9-5 2.9m10 0l-5 2.9m5-2.9v5.5l-5 2.9M7 8.75l5 2.9M7 8.75v5.5l5 2.9m0-5.5v5.5"
+      />
+    </svg>
+    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">Docker</span>
+  </div>
+);
+
 const About = () => {
   return (
     <section id="about" className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
@@ -81,15 +126,24 @@ const About = () => {
           />
 
           {/* Horizontal Skills Row */}
-          <div className="flex items-center gap-10 mt-8">
+          <div className="flex flex-wrap items-center gap-8 md:gap-10 mt-8">
             <div data-aos="zoom-in" data-aos-delay="300" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <PythonIcon />
             </div>
-            <div data-aos="zoom-in" data-aos-delay="450" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <HuggingFaceIcon />
+            <div data-aos="zoom-in" data-aos-delay="400" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <PyTorchIcon />
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="500" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <LangChainIcon />
             </div>
             <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <HuggingFaceIcon />
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="700" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <FastApiIcon />
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="800" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <DockerIcon />
             </div>
           </div>
 
