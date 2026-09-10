@@ -1,4 +1,5 @@
 import { aboutContent } from '../data/portfolioData';
+import avatarImage from '../assets/about/tushar-avatar.png';
 
 // Tech stack SVG icons rendered inline for crisp rendering
 const PythonIcon = () => (
@@ -57,14 +58,13 @@ const About = () => {
               <div className="absolute -top-3 left-1/2 w-16 h-6 bg-gray-900 rounded-t-xl transform -translate-x-1/2 flex justify-center items-center">
                 <div className="w-8 h-2 bg-black/30 rounded-full shadow-inner"></div>
               </div>
-              {/* Image Container — placeholder monogram until a photo/avatar is added */}
-              <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-gradient-to-br from-gray-800 to-black border-2 border-transparent flex items-center justify-center">
-                <span
-                  className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-white/40"
-                  aria-label="Tushar Vashishth"
-                >
-                  TV
-                </span>
+              {/* Image Container */}
+              <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-gradient-to-br from-gray-800 to-black border-2 border-transparent">
+                <img
+                  src={avatarImage}
+                  alt="Tushar Vashishth — AI Engineer"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             </div>
           </div>
