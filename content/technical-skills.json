@@ -2,7 +2,15 @@
   "categories": [
     {
       "title": "Programming & Backend",
-      "skills": ["Python", "FastAPI", "Django", "REST APIs", "Pandas", "NumPy", "System Design"]
+      "skills": [
+        "Python",
+        "FastAPI",
+        "Django",
+        "REST APIs",
+        "Pandas",
+        "NumPy",
+        "System Design"
+      ]
     },
     {
       "title": "AI & Machine Learning",
@@ -31,6 +39,7 @@
         "OpenCV",
         "OCR",
         "SHAP",
+        "Linux",
         "Deployment Tools"
       ]
     }
