@@ -2,10 +2,7 @@ backend:
   name: github
   repo: vashishthtushar/Portfolio
   branch: main
-  # TODO: replace with your real deployed domain once you know it
-  # (e.g. https://tushar-portfolio.vercel.app), then update the
-  # GitHub OAuth App's callback URL to match: <that domain>/api/callback
-  base_url: https://REPLACE_WITH_YOUR_VERCEL_DOMAIN.vercel.app
+  base_url: https://tusharportfolio-ten.vercel.app
   auth_endpoint: api/auth
 
 # Lets you run `npx decap-server` locally to test the admin UI
