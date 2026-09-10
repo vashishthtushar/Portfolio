@@ -8,14 +8,14 @@ export const personalInfo = {
   name: "Tushar Vashishth",
   firstName: "Tushar",
   brandName: "Tushar Vashishth",
-  title: "AI Engineer",
+  title: "AI/ML Engineer",
   location: "Bengaluru, India",
   phone: "+91 95481-89388",
   emails: {
     primary: "tusharvashishth469@gmail.com",
   },
   summary:
-    "AI Engineer focused on building practical AI solutions using Python, LLMs, RAG, and NLP. I enjoy taking ideas from a problem to a working solution — from development and integration to deployment.",
+    "AI/ML Engineer focused on building practical AI solutions using Python, LLMs, RAG, and NLP. I enjoy taking ideas from a problem to a working solution — from development and integration to deployment.",
   resumeUrl: "/Tushar_Vashishth_Resume.pdf",
 };
 
@@ -26,9 +26,9 @@ export const socialLinks = {
 
 export const heroContent = {
   greeting: "Hi, I'm Tushar",
-  titleHighlight: "AI Engineer",
+  titleHighlight: "AI/ML Engineer",
   subtitle:
-    "I build practical AI solutions using Python, LLMs, RAG, and NLP — from development and integration to deployment.",
+    "I design and ship production-grade AI systems — LLM pipelines, RAG, and machine learning models — turning ambiguous problems into deployed solutions that scale.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
@@ -39,7 +39,7 @@ export const heroContent = {
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Tushar Vashishth</span>, an AI Engineer building production-oriented AI/GenAI solutions — from LLM-powered pipelines and RAG systems to backend services that ship them.`,
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Tushar Vashishth</span>, an AI/ML Engineer building production-oriented AI/GenAI solutions — from LLM-powered pipelines and RAG systems to backend services that ship them.`,
   techStack: ["Python", "LangChain", "FastAPI"],
 };
 
@@ -296,7 +296,7 @@ export const experienceList = [
 ];
 
 export const footerContent = {
-  taglines: ["AI Engineering & GenAI", "Python · LLMs · RAG", "Backend & ML Systems"],
+  taglines: ["AI/ML Engineering & GenAI", "Python · LLMs · RAG", "Backend & ML Systems"],
   credential: "Minor in DS (AI/ML) · IIT Mandi",
   copyright: `© ${new Date().getFullYear()} Tushar Vashishth | Built with React`,
 };

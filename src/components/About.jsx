@@ -62,7 +62,7 @@ const About = () => {
               <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-gradient-to-br from-gray-800 to-black border-2 border-transparent">
                 <img
                   src={avatarImage}
-                  alt="Tushar Vashishth — AI Engineer"
+                  alt="Tushar Vashishth — AI/ML Engineer"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
