@@ -40,7 +40,7 @@ export const heroContent = {
 export const aboutContent = {
   heading: "Hello!",
   bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Tushar Vashishth</span>, an AI/ML Engineer building production-oriented AI/GenAI solutions — from LLM-powered pipelines and RAG systems to backend services that ship them.`,
-  techStack: ["Python", "PyTorch", "LangChain", "Hugging Face", "FastAPI", "Docker"],
+  techStack: ["Python", "Django", "FastAPI", "PyTorch", "TensorFlow", "LangChain", "Hugging Face", "Docker"],
 };
 
 export const skillsContent = {

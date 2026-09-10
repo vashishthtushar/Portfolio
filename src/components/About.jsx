@@ -38,6 +38,38 @@ const FastApiIcon = () => (
   </div>
 );
 
+const DjangoIcon = () => (
+  <div className="flex flex-col items-center gap-2">
+    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="12" fill="#092E20" />
+      <text
+        x="12"
+        y="16.5"
+        textAnchor="middle"
+        fontFamily="Arial, sans-serif"
+        fontSize="10.5"
+        fontWeight="800"
+        fill="#44B78B"
+      >
+        Dj
+      </text>
+    </svg>
+    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">Django</span>
+  </div>
+);
+
+const TensorFlowIcon = () => (
+  <div className="flex flex-col items-center gap-2">
+    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="12" fill="#FF6F00" />
+      <path fill="#fff" d="M12 3l4 2.3v4.6l-4-2.3-4 2.3V5.3L12 3z" />
+      <path fill="#fff" opacity="0.85" d="M8 9.9l4 2.3v7.4l-4-2.3V9.9z" />
+      <path fill="#fff" opacity="0.7" d="M16 9.9v7.4l-4 2.3v-7.4l4-2.3z" />
+    </svg>
+    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">TensorFlow</span>
+  </div>
+);
+
 const PyTorchIcon = () => (
   <div className="flex flex-col items-center gap-2">
     <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24">
@@ -130,19 +162,25 @@ const About = () => {
             <div data-aos="zoom-in" data-aos-delay="300" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <PythonIcon />
             </div>
+            <div data-aos="zoom-in" data-aos-delay="350" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <DjangoIcon />
+            </div>
             <div data-aos="zoom-in" data-aos-delay="400" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <FastApiIcon />
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="450" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <PyTorchIcon />
             </div>
             <div data-aos="zoom-in" data-aos-delay="500" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <TensorFlowIcon />
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="550" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <LangChainIcon />
             </div>
             <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <HuggingFaceIcon />
             </div>
-            <div data-aos="zoom-in" data-aos-delay="700" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <FastApiIcon />
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="800" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+            <div data-aos="zoom-in" data-aos-delay="650" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <DockerIcon />
             </div>
           </div>
