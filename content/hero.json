@@ -1,0 +1,11 @@
+{
+  "greeting": "Hi, I'm Tushar",
+  "titleHighlight": "AI/ML Engineer",
+  "subtitle": "I design and ship production-grade AI systems — LLM pipelines, RAG, and machine learning models — turning ambiguous problems into deployed solutions that scale.",
+  "ctaPrimary": { "text": "View My Work", "href": "#projects" },
+  "ctaSecondary": {
+    "text": "Contact Me",
+    "href": "mailto:tusharvashishth469@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Tushar,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,"
+  },
+  "ctaResume": { "text": "Download Resume", "href": "/Tushar_Vashishth_Resume.pdf" }
+}

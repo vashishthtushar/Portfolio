@@ -18,7 +18,7 @@ const LockIcon = () => (
   </svg>
 );
 
-const ProjectCard = ({ project, aosDelay }) => (
+const ProjectCard = ({ project, number, aosDelay }) => (
   <div 
     data-aos="fade-up"
     data-aos-delay={aosDelay}
@@ -42,7 +42,7 @@ const ProjectCard = ({ project, aosDelay }) => (
 
       {/* Number + Title */}
       <div className="flex items-baseline gap-4 mb-4">
-        <span className="text-5xl font-black text-white/10 font-serif italic">{project.number}</span>
+        <span className="text-5xl font-black text-white/10 font-serif italic">{number}</span>
         <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight">{project.title}</h3>
       </div>
 
@@ -123,9 +123,10 @@ const Projects = () => {
         {/* Project Cards */}
         <div className="flex flex-col gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <ProjectCard 
-              key={project.id} 
-              project={project} 
+            <ProjectCard
+              key={project.id}
+              project={project}
+              number={String(index + 1).padStart(2, '0')}
               aosDelay={String((index + 1) * 100)}
             />
           ))}

@@ -1,0 +1,17 @@
+{
+  "badge": "Academic Background",
+  "heading": "Education",
+  "description": "A foundation spanning traditional computer science and specialized AI/ML training.",
+  "entries": [
+    {
+      "degree": "Minor in Data Science (AI and ML)",
+      "institution": "Indian Institute of Technology Mandi",
+      "duration": "Jul 2024 – Dec 2025"
+    },
+    {
+      "degree": "Bachelor of Science",
+      "institution": "Dr. Bhimrao Ambedkar University, Agra",
+      "duration": "May 2019 – Sep 2023"
+    }
+  ]
+}

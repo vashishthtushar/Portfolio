@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "organization": "AiDOOS",
+      "role": "AI Engineer",
+      "duration": "Feb 2026 – Present",
+      "location": "Bengaluru, India",
+      "skills": [
+        "Production-oriented AI/GenAI solutions using LLM APIs, RAG, embeddings, and vector search",
+        "Python backend services with FastAPI and Django, integrating REST APIs for AI-powered workflows",
+        "End-to-end ML pipeline for effort prediction — scraping, cleaning, feature engineering, and XGBoost model training",
+        "Model integration, deployment, and troubleshooting on Linux production environments",
+        "Knowledge-graph and AI retrieval solutions using Neo4j to improve information retrieval and reasoning"
+      ],
+      "tech": ["Python", "FastAPI", "Django", "LLM APIs", "RAG", "XGBoost", "Neo4j"]
+    }
+  ]
+}

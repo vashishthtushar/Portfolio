@@ -1,0 +1,7 @@
+{
+  "featured": [
+    { "name": "Minor in Data Science (AI & ML)", "issuer": "CCE, IIT Mandi", "icon": "🎓" },
+    { "name": "Full Stack Development", "issuer": "Apna College", "icon": "💻" }
+  ],
+  "viewAllUrl": null
+}

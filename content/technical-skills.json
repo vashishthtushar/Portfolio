@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "title": "Programming & Backend",
+      "skills": ["Python", "FastAPI", "Django", "REST APIs", "Pandas", "NumPy", "System Design"]
+    },
+    {
+      "title": "AI & Machine Learning",
+      "skills": [
+        "LLMs",
+        "Generative AI",
+        "RAG",
+        "NLP",
+        "ML Algorithms",
+        "Deep Learning / Neural Networks",
+        "Embeddings & Vector DBs",
+        "Knowledge Graphs",
+        "Scikit-learn",
+        "PyTorch",
+        "TensorFlow"
+      ]
+    },
+    {
+      "title": "Data & Tools",
+      "skills": [
+        "Hugging Face",
+        "LangChain",
+        "Neo4j",
+        "Docker",
+        "Git & GitHub",
+        "OpenCV",
+        "OCR",
+        "SHAP",
+        "Deployment Tools"
+      ]
+    }
+  ]
+}

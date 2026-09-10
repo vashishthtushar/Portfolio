@@ -1,0 +1,28 @@
+{
+  "badge": "Writing",
+  "heading": "From the Blog",
+  "description": "Notes on AI engineering, RAG systems, and things I've learned building in production.",
+  "posts": [
+    {
+      "title": "AI Solved the Problem Perfectly. There Was Just One Problem.",
+      "excerpt": "It wasn't the problem we actually had — a look at why solving something well doesn't matter if it's the wrong thing to solve.",
+      "platform": "dev.to",
+      "url": "https://dev.to/tushar_vashishth_45ef7ac3/ai-solved-the-problem-perfectly-there-was-just-one-problem-4f48",
+      "date": "Sep 8, 2026"
+    },
+    {
+      "title": "From Learning the Stack to Understanding the System",
+      "excerpt": "Why AI-native development demands a different way of thinking about technology — what actually changes when you move from learning tools to understanding systems.",
+      "platform": "dev.to",
+      "url": "https://dev.to/tushar_vashishth_45ef7ac3/from-learning-the-stack-to-understanding-the-system-2jn5",
+      "date": "Aug 25, 2026"
+    },
+    {
+      "title": "Most RAG Problems Don't Start With the LLM",
+      "excerpt": "If you've worked with RAG, you've seen it: the answer is wrong, so you swap the model — except the model was rarely the problem in the first place.",
+      "platform": "dev.to",
+      "url": "https://dev.to/tushar_vashishth_45ef7ac3/most-rag-problems-dont-start-with-the-llm-5hi2",
+      "date": "Aug 21, 2026"
+    }
+  ]
+}

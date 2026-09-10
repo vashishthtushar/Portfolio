@@ -1,0 +1,242 @@
+backend:
+  name: github
+  repo: vashishthtushar/Portfolio
+  branch: main
+  # TODO: replace with your real deployed domain once you know it
+  # (e.g. https://tushar-portfolio.vercel.app), then update the
+  # GitHub OAuth App's callback URL to match: <that domain>/api/callback
+  base_url: https://REPLACE_WITH_YOUR_VERCEL_DOMAIN.vercel.app
+  auth_endpoint: api/auth
+
+# Lets you run `npx decap-server` locally to test the admin UI
+# against your local filesystem, no OAuth needed, before deploying.
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "personal"
+    label: "Personal Info"
+    files:
+      - name: "personal"
+        label: "Personal Info"
+        file: "content/personal.json"
+        fields:
+          - { label: "Full Name", name: "name", widget: "string" }
+          - { label: "First Name (used in greetings)", name: "firstName", widget: "string" }
+          - { label: "Brand Name (navbar / footer)", name: "brandName", widget: "string" }
+          - { label: "Title / Role", name: "title", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Summary", name: "summary", widget: "text" }
+          - { label: "Resume File Path (in /public)", name: "resumeUrl", widget: "string" }
+          - { label: "GitHub URL", name: "github", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+
+  - name: "hero"
+    label: "Hero Section"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "content/hero.json"
+        fields:
+          - { label: "Greeting", name: "greeting", widget: "string" }
+          - { label: "Title Highlight", name: "titleHighlight", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "text" }
+          - label: "Primary Button"
+            name: "ctaPrimary"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link", name: "href", widget: "string" }
+          - label: "Secondary Button"
+            name: "ctaSecondary"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link", name: "href", widget: "string" }
+          - label: "Resume Button"
+            name: "ctaResume"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link", name: "href", widget: "string" }
+
+  - name: "about"
+    label: "About Section"
+    files:
+      - name: "about"
+        label: "About Section"
+        file: "content/about.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Bio (raw HTML allowed, e.g. <span> tags)", name: "bio", widget: "text" }
+          - { label: "Tech Stack Tags (unused on the badge icons, kept for reference)", name: "techStack", widget: "list" }
+
+  - name: "process"
+    label: "My Process Section"
+    files:
+      - name: "process"
+        label: "My Process Section"
+        file: "content/process.json"
+        fields:
+          - { label: "Badge", name: "badge", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Cards"
+            name: "cards"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - { label: "End Text", name: "endText", widget: "string" }
+
+  - name: "technical_skills"
+    label: "Technical Skills"
+    files:
+      - name: "technical_skills"
+        label: "Technical Skills"
+        file: "content/technical-skills.json"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Category Title", name: "title", widget: "string" }
+              - { label: "Skills", name: "skills", widget: "list" }
+
+  - name: "soft_skills"
+    label: "Soft Skills"
+    files:
+      - name: "soft_skills"
+        label: "Soft Skills"
+        file: "content/soft-skills.json"
+        fields:
+          - label: "Skills"
+            name: "items"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "projects"
+        label: "Projects"
+        file: "content/projects.json"
+        fields:
+          - label: "Projects (order here controls display order)"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "ID (unique slug, no spaces)", name: "id", widget: "string" }
+              - { label: "Badge (optional, e.g. 🚀 Flagship Project)", name: "badge", widget: "string", required: false }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Tech Tags", name: "techTags", widget: "list" }
+              - label: "Links"
+                name: "links"
+                widget: "object"
+                fields:
+                  - { label: "GitHub URL (leave blank if none)", name: "github", widget: "string", required: false }
+                  - { label: "Live Demo URL (leave blank if none)", name: "demo", widget: "string", required: false }
+              - { label: "Is Flagship?", name: "isFlagship", widget: "boolean", default: false }
+              - { label: "Is Confidential? (hides GitHub/Demo buttons)", name: "confidential", widget: "boolean", default: false, required: false }
+              - { label: "Confidential Note", name: "confidentialNote", widget: "string", required: false }
+
+  - name: "blog"
+    label: "Blog"
+    files:
+      - name: "blog"
+        label: "Blog"
+        file: "content/blog.json"
+        fields:
+          - { label: "Badge", name: "badge", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Excerpt", name: "excerpt", widget: "text" }
+              - { label: "Platform (e.g. dev.to, Medium, Hashnode)", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Date (e.g. Sep 8, 2026)", name: "date", widget: "string" }
+
+  - name: "certificates"
+    label: "Certificates"
+    files:
+      - name: "certificates"
+        label: "Certificates"
+        file: "content/certificates.json"
+        fields:
+          - label: "Featured Certificates"
+            name: "featured"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Issuer", name: "issuer", widget: "string" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+          - { label: "\"View All\" URL (optional, e.g. a Drive folder link)", name: "viewAllUrl", widget: "string", required: false }
+
+  - name: "education"
+    label: "Education"
+    files:
+      - name: "education"
+        label: "Education"
+        file: "content/education.json"
+        fields:
+          - { label: "Badge", name: "badge", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Entries"
+            name: "entries"
+            widget: "list"
+            summary: "{{degree}}"
+            fields:
+              - { label: "Degree", name: "degree", widget: "string" }
+              - { label: "Institution", name: "institution", widget: "string" }
+              - { label: "Duration", name: "duration", widget: "string" }
+
+  - name: "experience"
+    label: "Experience"
+    files:
+      - name: "experience"
+        label: "Experience"
+        file: "content/experience.json"
+        fields:
+          - label: "Jobs"
+            name: "items"
+            widget: "list"
+            summary: "{{role}} @ {{organization}}"
+            fields:
+              - { label: "Organization", name: "organization", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Duration", name: "duration", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "What I Do (bullet points)", name: "skills", widget: "list" }
+              - { label: "Technologies", name: "tech", widget: "list" }
+
+  - name: "footer"
+    label: "Footer"
+    files:
+      - name: "footer"
+        label: "Footer"
+        file: "content/footer.json"
+        fields:
+          - { label: "Taglines", name: "taglines", widget: "list" }
+          - { label: "Credential Line", name: "credential", widget: "string" }
+          - { label: "Copyright Name", name: "copyrightName", widget: "string" }
+          - { label: "Copyright Suffix (year is added automatically)", name: "copyrightSuffix", widget: "string" }

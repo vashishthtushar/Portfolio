@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "name": "Product Positioning", "icon": "🎯", "desc": "Framing technical solutions in terms of the business problem they actually solve." },
+    { "name": "Market Research", "icon": "🔍", "desc": "Investigating the landscape before committing to an approach or architecture." },
+    { "name": "Customer Understanding", "icon": "🧭", "desc": "Grounding AI workflows in what the end user actually needs from the system." },
+    { "name": "Business Problem Analysis", "icon": "🧩", "desc": "Breaking down ambiguous business asks into concrete, solvable technical problems." },
+    { "name": "Technical Research", "icon": "📚", "desc": "Evaluating new models, frameworks, and techniques before adopting them in production." },
+    { "name": "Solution Thinking", "icon": "💡", "desc": "Moving from a stated problem to a working, deployable solution end-to-end." },
+    { "name": "Cross-functional Collaboration", "icon": "🤝", "desc": "Working across product, data, and engineering to ship AI features that stick." },
+    { "name": "Adaptability", "icon": "🌟", "desc": "Comfortable picking up new tools and frameworks as the AI stack keeps shifting." }
+  ]
+}
