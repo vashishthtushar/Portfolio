@@ -2,7 +2,7 @@ backend:
   name: github
   repo: vashishthtushar/Portfolio
   branch: main
-  base_url: https://tusharportfolio-ten.vercel.app
+  base_url: https://tusharvashishth.is-a.dev
   auth_endpoint: api/auth
 
 # Lets you run `npx decap-server` locally to test the admin UI
