@@ -1,13 +1,13 @@
 {
-  "name": "Tushar Vashishth",
-  "firstName": "Tushar",
-  "brandName": "Tushar Vashishth",
-  "title": "AI/ML Engineer",
-  "location": "Bengaluru, India",
-  "phone": "+91 95481-89388",
-  "email": "tusharvashishth469@gmail.com",
-  "summary": "AI/ML Engineer focused on building practical AI solutions using Python, LLMs, RAG, and NLP. I enjoy taking ideas from a problem to a working solution — from development and integration to deployment.",
   "resumeUrl": "/Tushar_Vashishth_Resume.pdf",
   "github": "https://github.com/vashishthtushar",
+  "summary": "AI/ML Engineer focused on building practical AI solutions using Python, LLMs, RAG, and NLP. I enjoy taking ideas from a problem to a working solution from development and integration to deployment.",
+  "name": "Tushar Vashishth",
+  "phone": "+91 95481-89388",
+  "brandName": "Tushar Vashishth",
+  "location": "Bengaluru, India",
+  "title": "AI/ML Engineer",
+  "firstName": "Tushar",
+  "email": "tusharvashishth469@gmail.com",
   "linkedin": "https://www.linkedin.com/in/tushar-vashishth-2ai/"
 }
