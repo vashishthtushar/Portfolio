@@ -38,7 +38,7 @@
         "github": null,
         "demo": null
       },
-      "confidentialNote": "Built at AiDOOS — proprietary; code and live demo are confidential.",
+      "confidentialNote": "Built at AiDOOS - proprietary; code and live demo are confidential.",
       "id": "story-point-prediction",
       "description": "A machine learning pipeline that predicts story-point effort for engineering tasks from historical project data, built to help teams estimate task effort before work begins. Covers the full lifecycle in-house - data collection and scraping, cleaning and preprocessing, feature engineering, and model training and evaluation with XGBoost."
     },
