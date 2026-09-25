@@ -6,12 +6,12 @@
     {
       "number": "01",
       "title": "Research",
-      "text": "I start by understanding the problem, the data available, and the technical constraints to find the right approach — not just the trendiest one."
+      "text": "I start by understanding the problem, the data available, and the technical constraints to find the right approach - not just the trendiest one."
     },
     {
       "number": "02",
       "title": "Design",
-      "text": "Designing the pipeline architecture — from data ingestion and retrieval strategy to model choice and API contracts — before writing production code."
+      "text": "Designing the pipeline architecture, from data ingestion and retrieval strategy to model choice and API contracts - before writing production code."
     },
     {
       "number": "03",
@@ -21,7 +21,7 @@
     {
       "number": "04",
       "title": "Deploy",
-      "text": "Shipping to production, monitoring model behavior, and iterating — including deployment and troubleshooting on Linux environments."
+      "text": "Shipping to production, monitoring model behavior, and iterating - including deployment and troubleshooting on Linux environments."
     }
   ],
   "endText": "Ready to ship!"
